@@ -24,9 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-o1-z68p3c@ije(ab!k$7!u%)%8&ujepa#c2=wuuu=+flywzob5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
+
+AUTH_USER_MODEL = 'otown.User'
 
 
 # Application definition
@@ -149,6 +151,11 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'otown.User'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-3cc9.up.railway.app'
+    
+]
 
 
 
