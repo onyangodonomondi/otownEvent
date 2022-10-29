@@ -150,4 +150,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'otown.User'
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 CSRF_TRUSTED_ORIGIN = ['https://web-production-3cc9.up.railway.app']
