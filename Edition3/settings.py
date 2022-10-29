@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'otown.apps.OtownConfig',
-     "corsheaders",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -152,4 +152,4 @@ AUTH_USER_MODEL = 'otown.User'
 
 
 
-CSRF_TRUSTED_ORIGIN = ['https://web-production-3cc9.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-3cc9.up.railway.app']
